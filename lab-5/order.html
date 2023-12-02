@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="scripts/loadtime.js"></script>
+    <script src="scripts/pages_nav.js"></script>
+    <script src="scripts/order.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Оформление заказа</title>
+    <div>
+        <h1>
+            Оформление заказа
+        </h1>
+    </div>
+</head>
+<body class ="body">
+<header class="section_header">
+    <div class="container">
+        <div class="section_headerline">
+            <nav class="section_navigation">
+                <a class="nav_item" href="index.html">Главная</a>
+                <a class="nav_item" href="order.html">Оформить заказ</a>
+                <a class="nav_item" href="feedback.html">Отзывы</a>
+                <a class="nav_item" href="jobs.html">Вакансии</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<form id="orderForm">
+    <label for="productName">Название товара:</label>
+    <input type="text" id="productName" name="productName" required>
+
+    <label for="quantity">Количество:</label>
+    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+    <label for="shippingAddress">Адрес доставки:</label>
+    <textarea id="shippingAddress" name="shippingAddress" rows="4" required></textarea>
+
+    <label for="paymentMethod">Способ оплаты:</label>
+    <select id="paymentMethod" name="paymentMethod" required>
+        <option value="creditCard">Картой банка</option>
+        <option value="paypal">Интернет кошелек (qiwi, paypal) </option>
+    </select>
+
+    <button type="button" onclick="submitOrder()">Сделать заказ</button>
+</form>
+<div id="orderSummary"></div>
+</body>
+<footer>
+    <div>
+        <p id ="loadTimeDisplay"></p>
+    </div>
+</footer>
+</html>
