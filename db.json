@@ -1,1 +1,22 @@
-{}
+[
+  {
+    "id": 1,
+    "url": "lab-6/src/img/akko.jpg"
+  },
+  {
+    "id": 2,
+    "url": "lab-6/src/img/leopold.jpg"
+  },
+  {
+    "id": 3,
+    "url": "lab-6/src/img/logo.jpg"
+  },
+  {
+    "id": 4,
+    "url": "lab-6/src/img/varmilo va87m.jpg"
+  },
+  {
+    "id": 5,
+    "url": "lab-6/src/img/wooting.jpg"
+  }
+]
