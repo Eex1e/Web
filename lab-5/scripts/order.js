@@ -10,8 +10,30 @@ function submitOrder() {
     orderSummaryHTML += "<p><strong>Shipping Address:</strong> " + shippingAddress + "</p>";
     orderSummaryHTML += "<p><strong>Payment Method:</strong> " + paymentMethod + "</p>";
 
-    // You can send this information to a server for further processing (e.g., order confirmation)
-
-    // Display order summary on the page
     document.getElementById("orderSummary").innerHTML = orderSummaryHTML;
+
+    var orderDetails = {
+        productName: productName,
+        quantity: quantity,
+        shippingAddress: shippingAddress,
+        paymentMethod: paymentMethod
+    };
+
+    var orderDetailsJSON = JSON.stringify(orderDetails);
+
+    localStorage.setItem("lastOrder", orderDetailsJSON);
+}
+
+function getSavedOrder() {
+    var savedOrderJSON = localStorage.getItem("lastOrder");
+
+    if (savedOrderJSON) {
+        var savedOrder = JSON.parse(savedOrderJSON);
+
+        document.getElementById("productName").value = savedOrder.productName;
+        document.getElementById("quantity").value = savedOrder.quantity;
+        document.getElementById("shippingAddress").value = savedOrder.shippingAddress;
+        document.getElementById("paymentMethod").value = savedOrder.paymentMethod;
+    }
+    document.addEventListener("DOMContentLoaded", getSavedOrder);
 }
