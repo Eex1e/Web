@@ -2,23 +2,23 @@
   "list": [
     {
       "id": 1,
-      "url": "lab-6/src/img/akko.jpg"
+      "url": "lab-6/src/img/akko.jpg",
+      "title": "Механическая клавиатура Akko world tour Tokyo"
     },
     {
       "id": 2,
-      "url": "lab-6/src/img/leopold.jpg"
+      "url": "lab-6/src/img/leopold.jpg",
+      "title": "Механическая клавиатура Leopold FC750R PD"
     },
     {
       "id": 3,
-      "url": "lab-6/src/img/logo.jpg"
+      "url": "lab-6/src/img/varmilo va87m.jpg",
+      "title": "Механическая клавиатура Varmilo Vintage Days CMYK V2 87"
     },
     {
       "id": 4,
-      "url": "lab-6/src/img/varmilo va87m.jpg"
-    },
-    {
-      "id": 5,
-      "url": "lab-6/src/img/wooting.jpg"
+      "url": "lab-6/src/img/wooting.jpg",
+      "title": "Механическая клавиатура Wooting 60HE"
     }
   ]
 }
